@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+
+:root {
+
+    
+
+    /* Variáveis de cores */
+
+    --cor-primaria: #3A1078;
+    --cor-secundaria: #4E31AA;
+    --cor-terciaria: #3795BD;
+    --cor-branca: #F7F7F8;
+
+    /* Variáveis de fontes */
+
+    --fonte-primaria: "Inter", "sans-serif";
+    --fonte-secundaria: "Poppins", "sans-serif"; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    background-color: var(--cor-branca);
+    width: 100vw;
+}
+
+header .logo {
+    width: 3%;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+main {
+    display: flex;
+    margin: 0 0 50px 80px;
+    justify-content: center;
+    gap: 200px; 
+}
+
+.decodificador__text-area {
+    background-color: transparent;
+    border: none;
+    color: var(--cor-secundaria);
+    margin-top: 90px;
+    text-transform: lowercase;
+    resize: none;
+}
+
+::placeholder {color: var(--cor-secundaria)}
+    .decodificador__text-area:focus{
+        outline: none;
+    }
+
+
+.decodificador__resultado {
+    background-color: var(--cor-secundaria);
+    width: 440px;
+    border-radius: 32px;
+    box-shadow: 5px 8px 7px #0000001e;
+    padding: 32px;
+    color: var(--cor-branca);
+    
+    
+}
+
+.decodificador__resultado .decodificador__sem-resultados {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.decodificador__resultado .decodificador__sem-resultados img {
+    max-width: 75%;
+}
+
+.decodificador__resultado .decodificador__sem-resultados h2 {
+    font-weight: 600;
+}
+
+.decodificador__resultado .decodificador__sem-resultados p {
+    font-size: 18px;
+}
+
+.decodificador__resultado .decodificador__texto-resultado {
+    width: 100%;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.decodificador__mensagem {
+    width: 400px;
+    background: white;
+    border: none;
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    resize: none;
+    text-align: justify;
+    text-indent: 8px;
+    padding: 8px;
+}
+
+.decodificador__mensagem:focus {
+    outline: none;
+}
+
+.decodificador__botoes {
+    display: flex;
+    margin-top: 18px;
+    gap: 30px;
+}
+
+.decodificador__botoes button, .decodificador__mensagem__btn-copiar {
+    border-radius: 24px;
+    color: var(--cor-branca);
+    cursor: pointer;
+    padding: 12px;
+    width: 328px;
+    border: none;
+    box-shadow: 3px 3px 8px #0000002f;
+}
+
+.decodificador__mensagem__btn-copiar {
+    display: block;
+    width: 336px;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+}
+
+.decodificador__info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.decodificador__info h6 {
+    color: #000;
+    font-size: 10px;
+    opacity: 80%;
+}
+
+.decodificador__botoes .btn-criptografar {
+    background-color: var(--cor-secundaria);
+}
+
+.decodificador__botoes .btn-criptografar:hover {
+    background-color: var(--cor-primaria);
+    color: #ececec;
+}
+
+.decodificador__botoes .btn-descriptografar {
+    background-color: var(--cor-terciaria);
+}
+
+.decodificador__botoes .btn-descriptografar:hover {
+    background-color: #2c7a9b;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    gap: 8px;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    width: 32px;
+    
+}
+
+footer a > img {
+    width: 100%;
+}

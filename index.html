@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Frame 6.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="decodificador__text-area" id="area_texto" placeholder="Digite seu texto" cols="41" rows="10"></textarea>
+
+            <div class="decodificador__info">
+                <img src="assets/Vector.png" alt="ícone de informação">
+                <h6>apenas letras minúsculas e sem acento</h6>
+            </div>
+
+            <div class="decodificador__botoes">
+                <button class="btn-criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="btn-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+            </div>
+            
+        </section>
+        <section class="decodificador__resultado">
+            <div class="decodificador__sem-resultados" id="sem-resultados">
+                <img src="assets/High quality products 1 1.png" alt="boneco com uma lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+
+            <div class="decodificador__texto-resultado" id="texto-resultado">
+                <textarea class="decodificador__mensagem" id="mensagem" cols="20" rows="10" disabled></textarea>
+                <button class="decodificador__mensagem__btn-copiar" id="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/yVittinho" target="_blank">
+            <img src="assets/github-icon.png" alt="logo do github">
+        </a>
+        <a href="https://www.linkedin.com/in/victtormarcelo/" target="_blank">
+            <img src="assets/linkedin-icon.png" alt="logo do linkedIn">
+        </a>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
